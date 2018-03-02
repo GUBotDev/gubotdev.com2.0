@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: black;
+}
+
+.major {
+    font-family: 'Aldrich';
+    padding: 15px;
+    border-bottom: solid 3px goldenrod;
+    color: goldenrod;
+}
+.major::after {
+    
+        content: "//";
+        color: rgba(211, 211, 211, 0.3);
+    
+}
