@@ -43,7 +43,7 @@ export class VideosComponent implements OnInit {
                     $.each(data.items, function(i, item) {
                         var videoTitle = item.snippet.title;
                         var videoId = item.snippet.resourceId.videoId;
-                        output = '<li class="list-inline-item col-lg-5"><iframe height="350pc" width="100%" src=\"//www.youtube.com/embed/'+videoId+'?showinfo=0" allowfullscreen></iframe><p style="color:goldenrod;font-family: Aldrich";">'+videoTitle+'</p></li>';
+                        output = '<li class="col-lg-5" style="display: inline-block; height: 450px; width: 100%; float:left;"><iframe height="350pc" width="100%" src=\"//www.youtube.com/embed/'+videoId+'?showinfo=0" allowfullscreen></iframe><p style="color:goldenrod;font-family: Aldrich";">'+videoTitle+'</p></li>';
                         $('#results').append(output);
                     })
                 }
